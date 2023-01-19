@@ -1,0 +1,23 @@
+{
+  "files": {
+    "amp.js": "static/chunks/fallback/amp.js",
+    "fallback-build-manifest.json": "fallback-build-manifest.json",
+    "main.js": "static/chunks/fallback/main.js",
+    "pages/_app.js": "static/chunks/fallback/pages/_app.js",
+    "pages/_error.js": "static/chunks/fallback/pages/_error.js",
+    "react-loadable-manifest.json": "react-loadable-manifest.json",
+    "react-refresh.js": "static/chunks/fallback/react-refresh.js",
+    "server/middleware-manifest.json": "server/middleware-manifest.json",
+    "static/chunks/polyfills.js": "static/chunks/polyfills.js",
+    "webpack.js": "static/chunks/fallback/webpack.js"
+  },
+  "entrypoints": [
+    "static/chunks/fallback/amp.js",
+    "static/chunks/fallback/main.js",
+    "static/chunks/fallback/pages/_app.js",
+    "static/chunks/fallback/pages/_error.js",
+    "static/chunks/fallback/react-refresh.js",
+    "static/chunks/polyfills.js",
+    "static/chunks/fallback/webpack.js"
+  ]
+}

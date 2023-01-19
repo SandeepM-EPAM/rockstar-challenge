@@ -1,0 +1,18 @@
+query App {
+  storeConfig {
+    id
+    category_url_suffix # One of those things. 🤷‍♂️
+    logo_alt
+    header_logo_src
+    copyright
+  }
+
+  categoryList {
+    id
+    children {
+      id
+      url_key
+      name
+    }
+  }
+}
