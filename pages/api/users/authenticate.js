@@ -30,6 +30,7 @@ function authenticate(req, res) {
         username: user.username,
         firstName: user.firstName,
         lastName: user.lastName,
+        emailid: user.emailid,
         token
     });
 }
