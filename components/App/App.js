@@ -6,6 +6,8 @@ import Link from 'next/link'
 import NextNprogress from 'nextjs-progressbar'
 import Head from 'next/head'
 import { resolveImage } from '~/lib/resolve-image'
+import { useState } from "react"
+import { userService } from '../../services';
 
 export const App = ({ children }) => {
   const { data } = useQuery(APP_QUERY)
@@ -16,13 +18,30 @@ export const App = ({ children }) => {
 
   const categories = data?.categoryList[0].children
 
+  function logout() {
+    userService.logout();
+  }
+
   if (typeof window !== "undefined") {
     window.digitalData = {
       page: {
         pageInfo: {
           pageName: 'hello123',
         },
+        _spname:{
+          identification: {
+            emailid: 'sandeep_maheshwari@epam.com',
+          }         
+        },
       },
+    };
+    window.digitalData = {
+      profile: {
+          identification: {
+            emailid: 'sandeep_maheshwari@epam.com',
+            mobilenr: '77777777777777777',
+          }         
+        },
     };
   }
 
@@ -30,6 +49,7 @@ export const App = ({ children }) => {
     <React.Fragment>
       <Head>
         <title>{store?.default_title}</title>
+        <link href="//netdna.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
       </Head>
 
       <div className={styles.app}>
@@ -74,6 +94,18 @@ export const App = ({ children }) => {
                   </Link>
                 </li>
               ))}
+              <li>
+                {userService.userValue && 
+                <a href="#" onClick={logout}>Logout</a>
+                }
+                {!userService.userValue && 
+                <Link href="/account"><a>Login</a></Link>
+                }
+              </li>
+              
+            </ul>
+            <ul>
+          
             </ul>
           </nav>
         </header>

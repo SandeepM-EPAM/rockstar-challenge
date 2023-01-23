@@ -1,0 +1,25 @@
+[
+    
+    {
+        "firstName": "Angelina",
+        "lastName": "Murphy",
+        "username": "angel",
+        "hash": "$2a$10$f3BsZpNk4gg.WnT3gC/sxu3K9EsgtvRFu4EpjQxdYzbnzT7mwGw1.",
+        "id": 2,
+        "dateCreated": "2023-01-21T07:03:27.828Z",
+        "dateUpdated": "2023-01-21T07:03:27.828Z",
+        "gender" : "female",
+        "emailid": "angel@testmail.com"
+    },
+    {
+        "firstName": "Rick",
+        "lastName": "Becky",
+        "username": "rick",
+        "hash": "$2a$10$GlVKC3JIZZwolgPQvhxwiudYy59it.Qrb9MdqajFseF2mimY9chhC",
+        "id": 3,
+        "dateCreated": "2023-01-21T07:03:46.555Z",
+        "dateUpdated": "2023-01-21T07:03:46.555Z",
+        "gender" : "male",
+        "emailid": "userb@testmail.com"
+    }
+]
