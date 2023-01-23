@@ -5,3 +5,9 @@ body {
   font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   font-size: 14px;
 }
+
+.welcome {
+  font-weight: bold;
+  text-align: center;
+  color: brown;
+}

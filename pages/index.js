@@ -5,13 +5,17 @@ import APP_QUERY from '~/components/App/App.graphql'
 import PRODUCTS_QUERY from '~/components/Products/Products.graphql'
 import aemHeadlessClient from '../lib/aem-headless-client'
 import Hero from '../components/Hero/Hero'
-
+import { userService } from '../services'
 
 
 function Page({ rockstars }) {
   return (
     <> 
     <div>
+      <div class="welcome"> <b>Welcome {userService.userValue?.firstName}!</b></div>
+      <br/>
+  
+
     {/* Hero Component */}
     <div>{rockstars.map(
       ({
@@ -25,10 +29,11 @@ function Page({ rockstars }) {
           />
         );
       }
-    )}</div>
-
+    )} <br/></div>
+    <br/>
     {/* Ecommerce content */}
     <Home/>
+    <br/>
     </div>  
   </>
   )
