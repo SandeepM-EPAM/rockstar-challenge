@@ -23,22 +23,21 @@ export const App = ({ children }) => {
   }
 
   if (typeof window !== "undefined") {
+    const userEmailId = "<no-email>";
+    if (localStorage.getItem("user") !== null){
+       userEmailId = JSON.parse(window.localStorage.user).emailid;
+    }
     window.digitalData = {
       page: {
         pageInfo: {
           pageName: 'hello123',
-        },
-        _spname:{
-          identification: {
-            emailid: 'sandeep_maheshwari@epam.com',
-          }         
-        },
+        }
       },
     };
     window.digitalData = {
       profile: {
           identification: {
-            emailid: 'sandeep_maheshwari@epam.com',
+            emailid: userEmailId,
             mobilenr: '77777777777777777',
           }         
         },
