@@ -24,8 +24,10 @@ export const App = ({ children }) => {
 
   if (typeof window !== "undefined") {
     const userEmailId = "<no-email>";
+    const userFirstName = "";
     if (localStorage.getItem("user") !== null){
        userEmailId = JSON.parse(window.localStorage.user).emailid;
+       userFirstName = JSON.parse(window.localStorage.user).firstName
     }
     window.digitalData = {
       page: {
@@ -38,10 +40,13 @@ export const App = ({ children }) => {
       profile: {
           identification: {
             emailid: userEmailId,
+            firstName: userFirstName,
             mobilenr: '77777777777777777',
           }         
         },
+      
     };
+   
   }
 
   return (
