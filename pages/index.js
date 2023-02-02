@@ -38,7 +38,7 @@ function Page({ rockstars }) {
     )} <br/></div> */}
     <br/>
     {/* Ecommerce content */}
-    <Home/>
+    {/* <Home/> */}
     <br/>
     </div>  
   </>

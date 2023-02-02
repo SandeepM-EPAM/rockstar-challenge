@@ -64,7 +64,7 @@ export const App = ({ children }) => {
           options={{ showSpinner: false, easing: 'ease' }}
         />
 
-        <header className={styles.header}>
+        {/* <header className={styles.header}>
           <Link href="/">
             <a>
               <img
@@ -112,7 +112,7 @@ export const App = ({ children }) => {
           
             </ul>
           </nav>
-        </header>
+        </header> */}
 
         <div className={styles.content}>{children}</div>
 
