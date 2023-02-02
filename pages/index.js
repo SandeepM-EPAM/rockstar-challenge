@@ -14,10 +14,16 @@ function Page({ rockstars }) {
     <div>
       <div class="welcome"> <b>Welcome {userService.userValue?.firstName}!</b></div>
       <br/>
-  
+      <div width="100%">
+        <img
+          src="https://as1.ftcdn.net/v2/jpg/01/57/88/64/1000_F_157886497_SYZak9YTugvDAw9CDpvzIqJyQsnVq7R8.jpg"
+          width="100%"
+          // height="200"
+        />
+      </div>
 
     {/* Hero Component */}
-    <div>{rockstars.map(
+    {/* <div>{rockstars.map(
       ({
         pagecontent,
         pageContentImage,
@@ -29,7 +35,7 @@ function Page({ rockstars }) {
           />
         );
       }
-    )} <br/></div>
+    )} <br/></div> */}
     <br/>
     {/* Ecommerce content */}
     <Home/>
@@ -40,26 +46,26 @@ function Page({ rockstars }) {
 }
 
 
-export async function getServerSideProps() {
-  //const res = await aemHeadlessClient.getAllAdventures();
-  const res = await aemHeadlessClient.getRockStarHomePage();
-  //const adventures = res?.data?.adventureList?.items || [];
-  const rockstars = res?.data?.rockstartHomePageModelList?.items || [];
+// export async function getServerSideProps() {
+//   //const res = await aemHeadlessClient.getAllAdventures();
+//   const res = await aemHeadlessClient.getRockStarHomePage();
+//   //const adventures = res?.data?.adventureList?.items || [];
+//   const rockstars = res?.data?.rockstartHomePageModelList?.items || [];
 
-  //getStaticProps1();
+//   //getStaticProps1();
 
-  if (!rockstars.length) {
-    return {
-      notFound: true,
-    }
-  }
+//   if (!rockstars.length) {
+//     return {
+//       notFound: true,
+//     }
+//   }
 
-  return {
-    props: {
-      rockstars
-    }
-  };
-}
+//   return {
+//     props: {
+//       rockstars
+//     }
+//   };
+// }
 
 // export const getStaticProps1 = async () => {
 //   const apolloClient = initializeApollo()
