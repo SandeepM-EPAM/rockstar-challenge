@@ -16,7 +16,7 @@ function Page({ rockstars }) {
       <br/>
 
     {/* Hero Component */}
-    <div>{rockstars.map(
+    {/* <div>{rockstars.map(
       ({
         pagecontent,
         pageContentImage,
@@ -29,7 +29,7 @@ function Page({ rockstars }) {
         );
       }
     )} <br/></div>
-    <br/>
+    <br/> */}
     {/* Ecommerce content */}
     <Home/>
     <br/>
@@ -39,26 +39,26 @@ function Page({ rockstars }) {
 }
 
 
-export async function getServerSideProps() {
-  //const res = await aemHeadlessClient.getAllAdventures();
-  const res = await aemHeadlessClient.getRockStarHomePage();
-  //const adventures = res?.data?.adventureList?.items || [];
-  const rockstars = res?.data?.rockstartHomePageModelList?.items || [];
+// export async function getServerSideProps() {
+//   //const res = await aemHeadlessClient.getAllAdventures();
+//   const res = await aemHeadlessClient.getRockStarHomePage();
+//   //const adventures = res?.data?.adventureList?.items || [];
+//   const rockstars = res?.data?.rockstartHomePageModelList?.items || [];
 
-  //getStaticProps1();
+//   //getStaticProps1();
 
-  if (!rockstars.length) {
-    return {
-      notFound: true,
-    }
-  }
+//   if (!rockstars.length) {
+//     return {
+//       notFound: true,
+//     }
+//   }
 
-  return {
-    props: {
-      rockstars
-    }
-  };
-}
+//   return {
+//     props: {
+//       rockstars
+//     }
+//   };
+// }
 
 // export const getStaticProps1 = async () => {
 //   const apolloClient = initializeApollo()
