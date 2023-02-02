@@ -15,6 +15,14 @@ function Page({ rockstars }) {
       <div class="welcome"> <b>Welcome {userService.userValue?.firstName}!</b></div>
       <br/>
 
+      <div width="100%">
+        <img
+          src="https://t4.ftcdn.net/jpg/01/57/88/65/240_F_157886508_2uBRNXKudUELMZZiW17FLKi8uJtwwLsp.jpg"
+          width="100%"
+          // height="200"
+        />
+      </div>
+
     {/* Hero Component */}
     {/* <div>{rockstars.map(
       ({
@@ -28,8 +36,8 @@ function Page({ rockstars }) {
           />
         );
       }
-    )} <br/></div>
-    <br/> */}
+    )} <br/></div> */}
+    <br/>
     {/* Ecommerce content */}
     <Home/>
     <br/>
