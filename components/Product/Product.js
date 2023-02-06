@@ -16,11 +16,17 @@ export const Product = ({ filters }) => {
 
   if (loading && !data) return <div>⌚️ Loading...</div>
 
+
+  console.log("product ===========" + product.name);
+  console.log("filters ===========" + filters.Price);
+
   return (
     <React.Fragment>
       <Head>
         <title>{product.name}</title>
       </Head>
+
+      {/* testing {process.env.NEXT_PUBLIC_AEM_HOST + product.aem_product_image} */}
 
       <div className={styles.product}>
         <div className={styles.gallery}>

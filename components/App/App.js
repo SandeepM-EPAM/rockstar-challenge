@@ -29,19 +29,12 @@ export const App = ({ children }) => {
        userEmailId = JSON.parse(window.localStorage.user).emailid;
        userFirstName = JSON.parse(window.localStorage.user).firstName
     }
-    window.digitalData = {
-      page: {
-        pageInfo: {
-          pageName: 'hello123',
-        }
-      },
-    };
+   
     window.digitalData = {
       profile: {
           identification: {
             emailid: userEmailId,
             firstName: userFirstName,
-            mobilenr: '77777777777777777',
           }         
         },
       

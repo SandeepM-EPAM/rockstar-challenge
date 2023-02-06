@@ -140,4 +140,28 @@
         "gender" : "female",
         "emailid": "aep5user@mailinator.com"
     }
+    ,
+    {
+        "firstName": "AEP6",
+        "lastName": "lastname",
+        "username": "aep6",
+        "hash": "$2a$10$GlVKC3JIZZwolgPQvhxwiudYy59it.Qrb9MdqajFseF2mimY9chhC",
+        "id": 12,
+        "dateCreated": "2023-01-21T07:03:46.555Z",
+        "dateUpdated": "2023-01-21T07:03:46.555Z",
+        "gender" : "female",
+        "emailid": "aep6user@mailinator.com"
+    }
+    ,
+    {
+        "firstName": "Sandeep",
+        "lastName": "Maheshwari",
+        "username": "mrsandeep",
+        "hash": "$2a$10$GlVKC3JIZZwolgPQvhxwiudYy59it.Qrb9MdqajFseF2mimY9chhC",
+        "id": 14,
+        "dateCreated": "2023-01-21T07:03:46.555Z",
+        "dateUpdated": "2023-01-21T07:03:46.555Z",
+        "gender" : "male",
+        "emailid": "mrsandeepcloud@gmail.com"
+    }
 ]
