@@ -14,8 +14,8 @@ export default function NextApp({ Component, pageProps }) {
 
   return (
     <>
-      <script src="https://assets.adobedtm.com/4ef014d90ea4/8f46d152dc3b/launch-534dbc3f5ac1-development.min.js" async></script>
-      {/* <script src="https://assets.adobedtm.com/ed8972503195/195fb8cb6ff9/launch-49829d8be8f7-development.min.js" async></script> */}
+      {/* <script src="https://assets.adobedtm.com/4ef014d90ea4/8f46d152dc3b/launch-534dbc3f5ac1-development.min.js" async></script> */}
+      <script src="https://assets.adobedtm.com/ed8972503195/195fb8cb6ff9/launch-49829d8be8f7-development.min.js" async></script>
       <ApolloProvider client={apolloClient}>
         <App>
           <Component {...pageProps} />
