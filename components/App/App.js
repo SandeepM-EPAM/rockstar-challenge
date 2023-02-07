@@ -23,7 +23,8 @@ export const App = ({ children }) => {
   }
 
   if (typeof window !== "undefined") {
-    const userEmailId = "<no-email>";
+    const randomNumberForCacheIssue = Math.floor(100000 + Math.random() * 900000);
+    const userEmailId = "noemail_randomNumberForCacheIssue@epam.com";
     const userFirstName = "";
     if (localStorage.getItem("user") !== null){
        userEmailId = JSON.parse(window.localStorage.user).emailid;
