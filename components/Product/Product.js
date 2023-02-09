@@ -3,22 +3,24 @@ import styles from './Product.module.css'
 import { useQuery, useMutation, gql } from '@apollo/client'
 import { resolveImage } from '~/lib/resolve-image'
 import PRODUCT_QUERY from './Product.graphql'
+import PRODUCTS_QUERY from '~/components/Products/Products.graphql'
 import Price from '~/components/Price'
 import Button from '~/components/Button'
 import Head from 'next/head'
 
 
 export const Product = ({ filters }) => {
-
+ 
   const { loading, data } = useQuery(PRODUCT_QUERY, { variables: { filters } })
-  
-  const product = data?.products.items[0]
 
+  const product = data?.products.items[0]
+  
+  console.log("product ===========" + product);
+  
   if (loading && !data) return <div>⌚️ Loading...</div>
 
-
-  console.log("product ===========" + product.name);
-  console.log("filters ===========" + filters.Price);
+  console.log("product1 ===========" + product);
+  console.log("product.aem_product_image ===========" + product.aem_product_image);
 
   return (
     <React.Fragment>

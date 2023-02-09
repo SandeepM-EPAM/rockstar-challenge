@@ -12,7 +12,7 @@ function Page({ rockstars }) {
   return (
     <> 
     <div>
-      <div class="welcome"> <b>Welcome {userService.userValue?.firstName}!</b></div>
+      <div className="welcome"> <b>Welcome {userService.userValue?.firstName}!</b></div>
       <br/>
 
       {/* <div width="100%">
@@ -31,6 +31,7 @@ function Page({ rockstars }) {
       }, index) => {
         return (
           <Hero
+            key={index}
             pageContent={pagecontent}
             pageContentImage= {pageContentImage}
           />

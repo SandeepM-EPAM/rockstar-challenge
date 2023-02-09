@@ -7,6 +7,7 @@ query ProductQuery($filters: ProductAttributeFilterInput!) {
       sku
       name
       aem_product_image
+      
       description {
         html
       }
