@@ -30,14 +30,16 @@ export const App = ({ children }) => {
        userFirstName = JSON.parse(window.localStorage.user).firstName
     }
    
-    if(userEmailId!="") { window.digitalData = {
-      profile: {
-          identification: {
-            emailid: userEmailId,
-            firstName: userFirstName,
-          }         
-        },     
-    };}
+    if(userEmailId) { 
+        window.digitalData = {
+        profile: {
+            identification: {
+              emailid: userEmailId,
+              firstName: userFirstName,
+            }         
+          },     
+      };
+  }
    
    
   }
