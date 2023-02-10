@@ -38,21 +38,24 @@ const URLResolver = ({ type, urlKey }) => {
 URLResolver.getInitialProps = async ({ req, res, query, asPath }) => {
   res?.setHeader('cache-control', 's-maxage=1, stale-while-revalidate')
 
-  const apolloClient = initializeApollo()
+  const apolloClient = initializeApollo();
 
   /** If a type has been provided then return the props and render the Component ... */
   if (query.type) {
+    var pathStr = query.pathname;
+    var urlKeyStr = pathStr.substr(0,pathStr.length-5);
+    urlKey = urlKeyStr.slice(1);
     return { type: query.type, urlKey }
   }
-  
+
   const pathname = query?.pathname.join('/')
-
-  const urlKey = query?.pathname?.pop().split('.')?.shift() || ''
-
+  
+  var urlKey = query?.pathname?.pop().split('.')?.shift() || ''
    /** If a type has been provided then return the props and render the Component ... */
    if (query.type) {
     return { type: query.type, urlKey }
   }
+
 
   /** ... if not, let's resolver the URL ...  */
   const { data } = await apolloClient.query({

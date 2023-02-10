@@ -3,9 +3,9 @@ import { useQuery } from '@apollo/client'
 import PRODUCTS_QUERY from './Products.graphql'
 import styles from './Products.module.css'
 import { resolveImage } from '~/lib/resolve-image'
-import Link from 'next/link'
 import Price from '~/components/Price'
 import Button from '~/components/Button'
+import Link from 'next/link'
 
 export const Products = ({ search, filters }) => {
   const { loading, data, fetchMore } = useQuery(PRODUCTS_QUERY, {
@@ -49,17 +49,19 @@ export const Products = ({ search, filters }) => {
     <section className={styles.products}>
       <div className={styles.productsList}>
         {products.map((product) => (
+         
           <Link
             key={product.id}
             href={{
-              pathname: '_url-resolver',
-              query: {
+              pathname: '_url-resolver', 
+              query: {          
                 pathname: `/${product.url_key + productUrlSuffix}`,
                 type: 'PRODUCT',
               },
             }}
             as={`/${product.url_key + productUrlSuffix}`}
           >
+            
             <a>
               <article className={styles.productItem}>
                 <picture className={styles.productWrapper}>
@@ -79,6 +81,7 @@ export const Products = ({ search, filters }) => {
 
                 <span className={styles.productName}>
                   {product.name}
+                  
                   <Price {...product.price_range} />
                 </span>
               </article>
