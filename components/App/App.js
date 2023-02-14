@@ -30,6 +30,8 @@ export const App = ({ children }) => {
        userFirstName = JSON.parse(window.localStorage.user).firstName
     }
    
+    console.log("userEmailId ==== > "+ userEmailId);
+
     if(userEmailId !== null) { 
         window.digitalData = {
         profile: {
