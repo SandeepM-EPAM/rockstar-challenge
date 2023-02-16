@@ -32,7 +32,7 @@ export const App = ({ children }) => {
    
     console.log("userEmailId ==== > "+ userEmailId);
 
-    if(userEmailId !== null) { 
+    if(userEmailId!==null) { 
         window.digitalData = {
         profile: {
             identification: {
@@ -41,7 +41,7 @@ export const App = ({ children }) => {
             }         
           },     
       };
-  }
+    }
    
    
   }
