@@ -56,6 +56,7 @@ export const App = ({ children }) => {
       <Head>
         <title>{store?.default_title}</title>
         <link href="//netdna.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="https://develop.d2jk6flbntkz96.amplifyapp.com/jscripts/at.js" />
       </Head>
 
       <div className={styles.app}>
@@ -121,4 +122,7 @@ export const App = ({ children }) => {
       </div>
     </React.Fragment>
   )
+
+  
 }
+
