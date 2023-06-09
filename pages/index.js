@@ -43,6 +43,7 @@ function Page({ rockstars }) {
     <Home/>
     <br/>
     </div>  
+    <script src="https://develop.d2jk6flbntkz96.amplifyapp.com/jscripts/at.js" />
   </>
   )
 }
