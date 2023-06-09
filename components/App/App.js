@@ -34,6 +34,11 @@ export const App = ({ children }) => {
 
     if(userEmailId!==null) { 
         window.digitalData = {
+        page:{
+            pageInfo:{
+              pageName: "Home Page",
+            }
+        },
         profile: {
             identification: {
               emailid: userEmailId,
