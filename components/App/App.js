@@ -56,7 +56,7 @@ export const App = ({ children }) => {
       <Head>
         <title>{store?.default_title}</title>
         <link href="//netdna.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-        
+        <script src="https://assets.adobedtm.com/ed8972503195/54e68c4d49b2/launch-bb0879dc4b4b-development.min.js" async></script>
       </Head>
 
       <div className={styles.app}>
