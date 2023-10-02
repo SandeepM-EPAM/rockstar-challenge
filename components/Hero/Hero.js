@@ -18,21 +18,26 @@ export default function Hero({ pageContent, pageContentImage }) {
           // height="200"
         />
       </div> */}
-      <div width="100%">
-        <img
-          src="https://as1.ftcdn.net/v2/jpg/01/57/88/64/1000_F_157886497_SYZak9YTugvDAw9CDpvzIqJyQsnVq7R8.jpg"
-          width="100%"
-          height="200"
-        />
-      </div>
-    
-      <br></br>
-      <h3 className="font-semibold text-gray-700">
-          <div itemscope itemid="urn:aemconnection:/content/dam/rockstar/cfs/home-page/jcr:content/data/master" itemtype="reference">
-            <span aria-hidden="true" className="absolute inset-0" />
-            {pageContent}
+
+    <div itemid="urn:aemconnection:/content/dam/rockstar/cfs/home-page/jcr:content/data/master" itemtype="reference" itemfilter="cf">
+          <div width="100%">
+            <div itemprop="pageContentImage" itemtype="media">
+                <img
+                  src={pageContentImage}
+                  width="100%"
+                  height="200"
+                />
+              </div>
           </div>
-      </h3>
+        
+          <br></br>
+          <h3 className="font-semibold text-gray-700">
+              <div>
+                <span aria-hidden="true" className="absolute inset-0" />
+                  <div itemprop="pageContent" itemtype="text">{pageContent}</div>
+              </div>
+          </h3>
+        </div>
     </div>
   )
 }
