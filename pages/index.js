@@ -26,13 +26,13 @@ function Page({ rockstars }) {
     {/* Hero Component */}
     <div>{rockstars.map(
       ({
-        pagecontent,
+        pageContent,
         pageContentImage,
       }, index) => {
         return (
           <Hero
             key={index}
-            pageContent={pagecontent}
+            pageContent={pageContent}
             pageContentImage= {pageContentImage}
           />
         );
