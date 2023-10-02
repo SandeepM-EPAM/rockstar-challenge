@@ -28,7 +28,7 @@ export default function Hero({ pageContent, pageContentImage }) {
     
       <br></br>
       <h3 className="font-semibold text-gray-700">
-          <div>
+          <div itemscope itemid="urn:aemconnection:/documents/mytext" itemtype="component">
             <span aria-hidden="true" className="absolute inset-0" />
             {pageContent}
           </div>
