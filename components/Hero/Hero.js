@@ -28,7 +28,7 @@ export default function Hero({ pageContent, pageContentImage }) {
     
       <br></br>
       <h3 className="font-semibold text-gray-700">
-          <div itemscope itemid="urn:aemconnection:/content/dam/rockstar/cfs/home-page" itemtype="text">
+          <div itemscope itemid="urn:aemconnection:/content/dam/rockstar/cfs/home-page/jcr:content/data/master" itemtype="reference">
             <span aria-hidden="true" className="absolute inset-0" />
             {pageContent}
           </div>
