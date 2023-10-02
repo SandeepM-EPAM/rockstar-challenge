@@ -22,7 +22,7 @@ export default function Hero({ pageContent, pageContentImage }) {
         <img
           src="https://as1.ftcdn.net/v2/jpg/01/57/88/64/1000_F_157886497_SYZak9YTugvDAw9CDpvzIqJyQsnVq7R8.jpg"
           width="100%"
-          // height="200"
+          height="200"
         />
       </div>
     

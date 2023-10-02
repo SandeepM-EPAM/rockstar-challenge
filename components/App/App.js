@@ -55,10 +55,10 @@ export const App = ({ children }) => {
     <React.Fragment>
       <Head>
         <title>{store?.default_title}</title>
-        <meta name="urn:adobe:aem:editor:aemconnection" content="aem:https://localhost:4502"/>
-
+        <meta name="urn:adobe:aem:editor:aemconnection" content="aem:https://author-p24103-e71623.adobeaemcloud.com"/>
         <link href="//netdna.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
         <script src="https://assets.adobedtm.com/ed8972503195/54e68c4d49b2/launch-bb0879dc4b4b-development.min.js" async></script>
+        <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
       </Head>
 
       <div className={styles.app}>
