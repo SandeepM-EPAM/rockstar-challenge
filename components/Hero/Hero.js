@@ -19,9 +19,9 @@ export default function Hero({ pageContent, pageContentImage }) {
         />
       </div> */}
 
-    <div itemid="urn:aemconnection:/content/dam/rockstar/cfs/home-page/jcr:content/data/master" itemtype="reference" itemfilter="cf">
+    <div>
           <div width="100%">
-            <div itemprop="pageContentImage" itemtype="media">
+            <div itemid="urn:aemconnection:/content/dam/rockstar/cfs/home-page/jcr:content/data/master" itemtype="reference" itemfilter="cf" itemprop="pageContentImage" itemtype="media">
                 <img
                   src={pageContentImage}
                   width="100%"
@@ -34,7 +34,7 @@ export default function Hero({ pageContent, pageContentImage }) {
           <h3 className="font-semibold text-gray-700">
               <div>
                 <span aria-hidden="true" className="absolute inset-0" />
-                  <div itemprop="pageContent" itemtype="text">{pageContent}</div>
+                  <div itemid="urn:aemconnection:/content/dam/rockstar/cfs/home-page/jcr:content/data/master" itemtype="reference" itemfilter="cf" itemprop="pageContent" itemtype="text">{pageContent}</div>
               </div>
           </h3>
         </div>
