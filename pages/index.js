@@ -33,7 +33,7 @@ function Page({ rockstars }) {
           <Hero
             key={index}
             pageContent={pageContent}
-            pageContentImage= {pageContentImage}
+            pageContentImage= {pageContentImage._publishUrl}
           />
         );
       }
