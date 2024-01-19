@@ -8,7 +8,6 @@ import Head from 'next/head'
 import { resolveImage } from '~/lib/resolve-image'
 import { useState } from "react"
 import { userService } from '../../services';
-import "@adobe/universal-editor-cors";
 
 
 export const App = ({ children }) => {
@@ -62,6 +61,7 @@ export const App = ({ children }) => {
         {/* <script src="https://assets.adobedtm.com/ed8972503195/54e68c4d49b2/launch-bb0879dc4b4b-development.min.js" async></script>
         <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script> */}
         <script src="https://assets.adobedtm.com/4ef014d90ea4/8f46d152dc3b/launch-534dbc3f5ac1-development.min.js" async></script>
+        <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
       </Head>
 
       <div className={styles.app}>
