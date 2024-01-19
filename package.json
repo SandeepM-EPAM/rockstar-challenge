@@ -9,7 +9,7 @@
   "dependencies": {
     "@adobe/aem-headless-client-js": "^3.1.1",
     "@adobe/alloy": "^2.13.1",
-    "@adobe/universal-editor-cors": "^1.4.0",
+    "@adobe/universal-editor-cors": "^2.0.0",
     "@apollo/client": "^3.2.3",
     "@hookform/resolvers": "^2.7.1",
     "@xmldom/xmldom": "^0.8.2",
