@@ -8,6 +8,8 @@ import Head from 'next/head'
 import { resolveImage } from '~/lib/resolve-image'
 import { useState } from "react"
 import { userService } from '../../services';
+import "@adobe/universal-editor-cors";
+
 
 export const App = ({ children }) => {
   const { data } = useQuery(APP_QUERY)
@@ -55,7 +57,7 @@ export const App = ({ children }) => {
     <React.Fragment>
       <Head>
         <title>{store?.default_title}</title>
-        <meta name="urn:adobe:aem:editor:aemconnection" content="aem:https://author-p24103-e71623.adobeaemcloud.com"/>
+        <meta name="urn:adobe:aue:system:aemconnection" content="aem:https://author-p24103-e71623.adobeaemcloud.com"/>
         <link href="//netdna.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
         {/* <script src="https://assets.adobedtm.com/ed8972503195/54e68c4d49b2/launch-bb0879dc4b4b-development.min.js" async></script>
         <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script> */}
